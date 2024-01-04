@@ -30,6 +30,17 @@ Table of contents
 General
 --------------------------------------------- 
 */
+.nav-button{
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2a;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 7px;
+  /* margin-bottom: 20px; */
+}
 .button{
   width: 100%;
   height: 100%;
@@ -353,12 +364,12 @@ header
 
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a {
-  color: #fff !important;
+  color: #2a2a2a !important;
   text-transform: capitalize;
   padding: 0px 20px;
   font-weight: 400;
@@ -372,7 +383,7 @@ header
 
 .background-header .main-nav .nav li:last-child .main-white-button a {
   background-color: #8d99af;
-  color: #fff !important;
+  color: #2a2a2a !important;
 }
 
 .background-header .main-nav .nav li:last-child .main-white-button a i {
@@ -632,8 +643,9 @@ header
 @media (max-width: 992px) {
   .header-area .main-nav .nav li:last-child  ,
   .background-header .main-nav .nav li:last-child {
-    display: none;
+    /* display: none; */
   }
+  
   .header-area .main-nav .nav li:nth-child(6),
   .background-header .main-nav .nav li:nth-child(6) {
     padding-right: 0px;
@@ -647,6 +659,7 @@ header
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
+  
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #8d99af!important;
@@ -699,6 +712,17 @@ header
     border-bottom: 1px solid #e7e7e7;
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+  .header-area .main-nav .nav li .main-white-button a {
+    background-color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(219, 18%, 62%);
+    text-transform: capitalize;
+    padding: 12px 25px;
+    border-radius: 7px;
+    letter-spacing: 0.25px;
+    transition: all .3s;
   }
   .header-area .main-nav .nav li a {
     height: 50px !important;
@@ -903,6 +927,9 @@ Popular Categories
 .popular-categories .section-heading {
   text-align: center;
   margin-bottom: 80px;
+}
+.section-heading h2 {
+  color: #8d99af;
 }
 
 .popular-categories .naccs {
@@ -1267,7 +1294,7 @@ form#contact {
   margin: 0px 60px 0px 45px;
 }
 
-form#contact input {
+form#contact input, form#contact select {
   width: 100%;
   height: 46px;
   border-radius: 7px;
