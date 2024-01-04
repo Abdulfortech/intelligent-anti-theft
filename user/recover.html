@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Anti Theft | User Dashboard</title>
+    <title>Anti Theft | Recover Item</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -64,6 +64,7 @@ https://templatemo.com/tm-564-plot-listing
               <li><a href="home.html#reports">Reports</a></li>
               <li><a href="articles.html">Articles</a></li>
               <li><a href="profile.html">Profile</a></li> 
+              <!-- <li><a class="nav-button" href="profile.html">Profile</a></li>  -->
               <li><div class="main-white-button"><a href="user/signout"><i class="fa fa-sign-out"></i> Sign Out</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
@@ -77,91 +78,82 @@ https://templatemo.com/tm-564-plot-listing
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner">
+  <div class="page-heading">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-8">
           <div class="top-text header-text">
-            <h2 class="my-3">Welcome Abdullahi!</h2>
-            <hr class="mb-2 bg-white border-2 border-white">
-            <p class="mb-3 text-white">We are happy to have you here at Anti-Theft Network. Use your account to find your stolen items in Nigeria.</p>
-            <a href="recover.html" class="button"><i class="fa fa-search"></i> Recover Your Item</a>
+            <h2>Recover Your Item</h2>
           </div>
-        </div>
-        <div class="col-lg-12">
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="popular-categories" id="reports">
+  <div class="category-post">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 my-4">
-          <div class="section-heading">
-            <h2>Latest Report</h2>
-          </div>
-          <div class="row">
-            <!-- report -->
-            <div class="col-md-3">
-              <a href="report-single.html" class="card text-dark mb-3">
-                <div class="card-body">
-                  <h5>HP Medium-Size Laptop</h5>
-                  <hr>
-                  <p>
-                    <span class="float-start"><i class="fa fa-sitemap"></i> Laptop</span>
-                    <span class="float-end"><i class="fa fa-map-marker"></i> Kano</span>
-                  </p>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <center>
+                            <i class="fa fa-briefcase" style="font-size: 70px; color:#8d99af"></i>
+                        </center>
+                        <h2 class="text-center my-4">Recover Your Item</h2>
+                        <form id="contact">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <fieldset>
+                                      <label for="">What are you looking for?</label>
+                                    <input type="text" name="fname" id="fname" placeholder="What are looking for?" required>
+                                  </fieldset>
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                        <label for="">Select a Region?</label>
+                                        <select class="form-control" name="">
+                                            <option value="">Choose a Region</option>
+                                            <option>Kano</option>
+                                            <option>Kaduna</option>
+                                            <option>Katsina</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                      <label for="">Select a Category?</label>
+                                      <select name="">
+                                          <option value="">Choose a Category</option>
+                                          <option>Phone</option>
+                                          <option>Car</option>
+                                      </select>
+                                    </fieldset>
+                                  </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <label for="">Description</label>
+                                    <textarea name="description" placeholder="More description on what you are looking for">
+                                        
+                                    </textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <center>
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button mb-4"><i class="fa fa-send"></i> Submit</button>
+                                    </fieldset>
+                                </center>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </a>
             </div>
-            <!-- report -->
-            <div class="col-md-3">
-                <a href="report-single.html" class="card text-dark mb-3">
-                    <div class="card-body">
-                      <h5>HP Medium-Size Laptop</h5>
-                      <hr>
-                      <p>
-                        <span class="float-start"><i class="fa fa-sitemap"></i> Laptop</span>
-                        <span class="float-end"><i class="fa fa-map-marker"></i> Kano</span>
-                      </p>
-                    </div>
-                </a>
-            </div>
-            <!-- report -->
-            <div class="col-md-3">
-              <div class="card">
-                <a href="report-single.html" class="card text-dark mb-3">
-                    <div class="card-body">
-                      <h5>HP Medium-Size Laptop</h5>
-                      <hr>
-                      <p>
-                        <span class="float-start"><i class="fa fa-sitemap"></i> Laptop</span>
-                        <span class="float-end"><i class="fa fa-map-marker"></i> Kano</span>
-                      </p>
-                    </div>
-                </a>
-              </div>
-            </div>
-            <!-- report -->
-            <div class="col-md-3">
-                <a href="report-single.html" class="card text-dark mb-3">
-                    <div class="card-body">
-                        <h5>HP Medium-Size Laptop</h5>
-                        <hr>
-                        <p>
-                            <span class="float-start"><i class="fa fa-sitemap"></i> Laptop</span>
-                            <span class="float-end"><i class="fa fa-map-marker"></i> Kano</span>
-                        </p>
-                    </div>
-                </a>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
   </div>
+
 
   <footer>
     <div class="container">
